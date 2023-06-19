@@ -1,11 +1,11 @@
-About r-calendr
-===============
+About r-calendr-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-calendr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://r-coder.com/, https://r-coder.com/calendar-plot-r/
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-calendr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Contains the function calendR() for creating fully customizable monthly and yearly calendars (colors, fonts, formats, ...) and even heatmap calendars. In addition, it allows saving the calendars in ready to print A4 format PDF files.
 
