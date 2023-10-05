@@ -1,4 +1,4 @@
-{% set version = '1.1' %}
+{% set version = "1.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/calendR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/calendR/calendR_{{ version }}.tar.gz
-  sha256: d7b9354f6f4e587b2690211b1e0b43695948e2cf7be0bfce7b8deb32b43d51be
+  sha256: cc8795a50e438f17eb6485d3c53892b37b62a55c81245c225950732557d47fba
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,9 +50,7 @@ test:
 about:
   home: https://r-coder.com/, https://r-coder.com/calendar-plot-r/
   license: GPL-2.0-only
-  summary: Contains the function calendR() for creating fully customizable monthly and yearly
-    calendars (colors, fonts, formats, ...) and even heatmap calendars. In addition,
-    it allows saving the calendars in ready to print A4 format PDF files.
+  summary: Contains the function calendR() for creating fully customizable monthly and yearly calendars (colors, fonts, formats, ...) and even heatmap calendars. In addition, it allows saving the calendars in ready to print A4 format PDF files.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
